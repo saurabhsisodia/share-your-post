@@ -7,7 +7,7 @@ class make_connection(object):
 		table=("CREATE TABLE entries(id  int(255) PRIMARY KEY auto_increment,title VARCHAR(255) not null,content LONGTEXT not null)")
 
 		'establishing connections with mysql db'
-		self.cnx=mysql.connector.connect(host="localhost",user="root",passwd="UBUNTU.123",database=DB_NAME)
+		self.cnx=mysql.connector.connect(host="localhost",user="root",passwd="******",database=DB_NAME)
 		self.cursor=self.cnx.cursor()
 		try:
 			self.cursor.execute(table)
